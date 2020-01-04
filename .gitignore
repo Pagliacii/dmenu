@@ -7,3 +7,6 @@ dmenu
 stest
 
 config.h
+
+*.orig
+*.rej
