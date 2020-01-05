@@ -77,3 +77,19 @@ Adds an flag which will cause dmenu to select an item immediately if theres one 
 
 + Michael Stummvoll (stummi) [suckless@stummi.org](mailto:suckless@stummi.org)
 
+## Line height
+
+**File**: `dmenu-lineheight-4.9.diff`
+
+### Description
+
+The patch adds a *-h* option, which sets the minimum height of a dmenu line. This helps integrate dmenu with other UI elements that require a particular vertical size.
+
+### Authors
+
++ Xarchus
++ Jonathon Fernyhough (jonathon at manjaro-dot-org) (4.7 rewrite)
++ Aleksandrs Stier (4.9 port)
+
+![with '-h 24'](http://tools.suckless.org/dmenu/patches/line-height/dmenu-line-height.png)
+
