@@ -119,3 +119,15 @@ Adds text which displays the number of matched and total items in the top right 
 
 ![example](https://tools.suckless.org/dmenu/patches/numbers/dmenu-numbers.png)
 
+## Password
+
+**File**: `dmenu-password-4.9.diff`
+
+### Description
+
+By applying this patch, dmenu will not directly display the keyboard input, but instead replace it with dots. All data from stdin will be ignored. Use *-P* to activate.
+
+### Authors
+
++ Philip K. [philippija@gmail.com](mailto:philippija@gmail.com)
+
