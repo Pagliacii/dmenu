@@ -101,7 +101,21 @@ The patch adds a *-h* option, which sets the minimum height of a dmenu line. Thi
 
 This patch provides dmenu the ability for history navigation similar to that of bash. Press `alt+p` for the previous history and `alt+n` for the next. Use *-H* option to specify a file to store input history.
 
-### Author
+### Authors
 
 + phi [crispyfrog@163.com](mailto:crispyfrog@163.com)
+
+## numbers
+
+**File**: `dmenu-numbers-4.9.diff`
+
+### Description
+
+Adds text which displays the number of matched and total items in the top right corner of dmenu.
+
+### Authors
+
++ Miles Alan [m@milesalan.com](mailto:m@milesalan.com)
+
+![example](https://tools.suckless.org/dmenu/patches/numbers/dmenu-numbers.png)
 
