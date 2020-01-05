@@ -93,3 +93,15 @@ The patch adds a *-h* option, which sets the minimum height of a dmenu line. Thi
 
 ![with '-h 24'](http://tools.suckless.org/dmenu/patches/line-height/dmenu-line-height.png)
 
+## navhistory
+
+**File**: `dmenu-navhistory-4.6.diff`
+
+### Description
+
+This patch provides dmenu the ability for history navigation similar to that of bash. Press `alt+p` for the previous history and `alt+n` for the next. Use *-H* option to specify a file to store input history.
+
+### Author
+
++ phi [crispyfrog@163.com](mailto:crispyfrog@163.com)
+
