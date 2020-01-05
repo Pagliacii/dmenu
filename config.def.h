@@ -1,6 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 /* Default settings; can be overriden by command line. */
 
+static int instant = 0;                     /* -n option; select an item immediately if only one matching */
 static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
 static int fuzzy = 0;                       /* -F  option; if 0, dmenu doesn't use fuzzy matching     */
 static int centered = 0;                    /* -c option; centers dmenu on screen */
