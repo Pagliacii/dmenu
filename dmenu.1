@@ -8,6 +8,8 @@ dmenu \- dynamic menu
 .IR lines ]
 .RB [ \-h
 .IR height ]
+.RB [ \-H
+.IR histfile ]
 .RB [ \-m
 .IR monitor ]
 .RB [ \-p
@@ -63,6 +65,9 @@ dmenu lists items vertically, with the given number of lines.
 .TP
 .BI \-h " height"
 dmenu uses a menu line of at least 'height' pixels tall, but no less than 8.
+.TP
+.BI \-H " histfile"
+dmenu uses a file to record input histories.
 .TP
 .BI \-m " monitor"
 dmenu is displayed on the monitor number supplied. Monitor numbers are starting
@@ -203,6 +208,12 @@ Page up
 .TP
 .B M\-l
 Down
+.TP
+.B M\-p
+Previous history
+.TP
+.B M\-n
+Next history
 .SH SEE ALSO
 .IR dwm (1),
 .IR stest (1)
