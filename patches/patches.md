@@ -1,12 +1,8 @@
-# dmenu
+# Patches
 
-dmenu is a dynamic menu for X, originally designed for [dwm](https://dwm.suckless.org). It manages large numbers of user-defined menu items efficiently.
+All patches could be found at this [link](https://tools.suckless.org/dmenu/patches/).
 
-## Patches
-
-For instructions on how to submit and format patches, take a look at the [hacking guidelines](https://suckless.org/hacking).
-
-**Usage**:
+## Usage
 
 ```shell
 # in dmenu folder
@@ -15,27 +11,48 @@ $ rm -f config.h
 $ sudo make clean install
 ```
 
-### border
+## border
 
-**Description**: This patch adds a border around the dmenu window. It is intended to be used with the center or xyw patches, to make the menu stand out from similarly coloured windows.
+**File**: `dmenu-border-4.9.diff`
 
-**File**: `patches/dmenu-border-4.9.diff`
+### Description
+
+This patch adds a border around the dmenu window. It is intended to be used with the center or xyw patches, to make the menu stand out from similarly coloured windows.
+
+### Authors
+
++ Leon Plickat [leonhenrik.plickat@stud.uni-goettingen.de](mailto:leonhenrik.plickat@stud.uni-goettingen.de)
 
 ![border patch](https://tools.suckless.org/dmenu/patches/border/dmenu_border.png)
 
-### center
+## center
 
-**Description**: This patch centers dmenu in the middle of the screen. With `dmenu-center-20191105-f1ca0d0.diff`, you can use *-c* to center dmenu.
+**File**: `dmenu-center-20191105-f1ca0d0.diff`
 
-**File**: `patches/dmenu-center-20191105-f1ca0d0.diff`
+### Description
+
+This patch centers dmenu in the middle of the screen. With `dmenu-center-20191105-f1ca0d0.diff`, you can use *-c* to center dmenu.
+
+### Authors
+
++ Ed van Bruggen [edvb@uw.edu](mailto:edvb@uw.edu)
++ Nihal Jere [nihal@nihal.jere.xyz](mailto:nihal@nihal.jere.xyz) (20191105)
 
 ### fuzzymatch
 
-**Description**: This patch adds support for fuzz-matching to dmenu, allowing users to type non-consecutive portions of the string to be matched. Adds the option *fuzzy* to `config.def.h` and the flag *-F* to dmenu which enable to turn fuzzy-matching on and off.
+**File**: `dmenu-fuzzymatch-4.9.diff`
 
-**File**: `patches/dmenu-fuzzymatch-4.9.diff`
+### Description
 
-**Note**:
+This patch adds support for fuzz-matching to dmenu, allowing users to type non-consecutive portions of the string to be matched. Adds the option *fuzzy* to `config.def.h` and the flag *-F* to dmenu which enable to turn fuzzy-matching on and off.
+
+### Authors
+
++ Jan Christoph Ebersbach [jceb@e-jc.de](mailto:jceb@e-jc.de)
++ Laslo Hunhold [dev@frign.de](mailto:dev@frign.de) (dmenu-4.6)
++ Aleksandrs Stier (4.9)
+
+### Note
 
 + Supports dmenu's case insensitive switch (-i)
 + This patch enables fuzzy-matching as default, and use the flag *-F* to turn off it. You can change this by modify these codes:
@@ -47,4 +64,16 @@ static int fuzzy = 0;
 else if (!strcmp(argv[i], "-F"))
         fuzzy = 1;
 ```
+
+## Instant Mode
+
+**File**: `dmenu-instant-4.7.diff`
+
+### Description
+
+Adds an flag which will cause dmenu to select an item immediately if theres one matching option left.
+
+### Authors
+
++ Michael Stummvoll (stummi) [suckless@stummi.org](mailto:suckless@stummi.org)
 
