@@ -2,6 +2,7 @@
 
 All patches could be found at this [link](https://tools.suckless.org/dmenu/patches/).
 
+## Table of Contents
 
 <!-- vim-markdown-toc GFM -->
 
