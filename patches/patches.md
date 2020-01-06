@@ -2,6 +2,8 @@
 
 All patches could be found at this [link](https://tools.suckless.org/dmenu/patches/).
 
+[TOC]
+
 ## Usage
 
 ```shell
@@ -38,7 +40,7 @@ This patch centers dmenu in the middle of the screen. With `dmenu-center-2019110
 + Ed van Bruggen [edvb@uw.edu](mailto:edvb@uw.edu)
 + Nihal Jere [nihal@nihal.jere.xyz](mailto:nihal@nihal.jere.xyz) (20191105)
 
-### fuzzymatch
+## fuzzymatch
 
 **File**: `dmenu-fuzzymatch-4.9.diff`
 
