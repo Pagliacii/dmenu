@@ -2,7 +2,47 @@
 
 All patches could be found at this [link](https://tools.suckless.org/dmenu/patches/).
 
-[TOC]
+
+<!-- vim-markdown-toc GFM -->
+
+* [Usage](#usage)
+* [border](#border)
+  * [Description](#description)
+  * [Authors](#authors)
+* [center](#center)
+  * [Description](#description-1)
+  * [Authors](#authors-1)
+* [fuzzymatch](#fuzzymatch)
+  * [Description](#description-2)
+  * [Authors](#authors-2)
+  * [Note](#note)
+* [Instant Mode](#instant-mode)
+  * [Description](#description-3)
+  * [Authors](#authors-3)
+* [Line height](#line-height)
+  * [Description](#description-4)
+  * [Authors](#authors-4)
+* [navhistory](#navhistory)
+  * [Description](#description-5)
+  * [Authors](#authors-5)
+* [numbers](#numbers)
+  * [Description](#description-6)
+  * [Authors](#authors-6)
+* [Password](#password)
+  * [Description](#description-7)
+  * [Authors](#authors-7)
+* [print input text](#print-input-text)
+  * [Description](#description-8)
+  * [Usage in Surf](#usage-in-surf)
+  * [Authors](#authors-8)
+* [symbols](#symbols)
+  * [Description](#description-9)
+  * [Authors](#authors-9)
+* [xresources](#xresources)
+  * [Description](#description-10)
+  * [Authors](#authors-10)
+
+<!-- vim-markdown-toc -->
 
 ## Usage
 
