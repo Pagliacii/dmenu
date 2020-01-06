@@ -16,7 +16,6 @@
 #include <X11/extensions/Xinerama.h>
 #endif
 #include <X11/Xft/Xft.h>
-#include <X11/Xresource.h>
 
 #include "drw.h"
 #include "util.h"
@@ -957,31 +956,6 @@ usage(void)
 	exit(1);
 }
 
-void
-read_Xresources(void) {
-	XrmInitialize();
-
-	char* xrm;
-	if ((xrm = XResourceManagerString(drw->dpy))) {
-		char *type;
-		XrmDatabase xdb = XrmGetStringDatabase(xrm);
-		XrmValue xval;
-
-		if (XrmGetResource(xdb, "dmenu.font", "*", &type, &xval) == True) /* font or font set */
-			fonts[0] = strdup(xval.addr);
-		if (XrmGetResource(xdb, "dmenu.background", "*", &type, &xval) == True)  /* normal background color */
-			colors[SchemeSel][ColBg] = strdup(xval.addr);
-		if (XrmGetResource(xdb, "dmenu.foreground", "*", &type, &xval) == True)  /* normal foreground color */
-			colors[SchemeNorm][ColFg] = strdup(xval.addr);
-		if (XrmGetResource(xdb, "dmenu.selbackground", "*", &type, &xval) == True)  /* selected background color */
-			colors[SchemeSel][ColBg] = strdup(xval.addr);
-		if (XrmGetResource(xdb, "dmenu.selforeground", "*", &type, &xval) == True)  /* selected foreground color */
-			colors[SchemeSel][ColFg] = strdup(xval.addr);
-
-		XrmDestroyDatabase(xdb);
-	}
-}
-
 int
 main(int argc, char *argv[])
 {
@@ -1052,7 +1026,6 @@ main(int argc, char *argv[])
 		die("could not get embedding window attributes: 0x%lx",
 		    parentwin);
 	drw = drw_create(dpy, screen, root, wa.width, wa.height);
-	read_Xresources();
 	if (!drw_fontset_create(drw, fonts, LENGTH(fonts)))
 		die("no fonts could be loaded.");
 	lrpad = drw->fonts->h;
