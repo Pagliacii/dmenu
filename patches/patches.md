@@ -39,9 +39,6 @@ All patches could be found at this [link](https://tools.suckless.org/dmenu/patch
 * [symbols](#symbols)
   * [Description](#description-9)
   * [Authors](#authors-9)
-* [xresources](#xresources)
-  * [Description](#description-10)
-  * [Authors](#authors-10)
 
 <!-- vim-markdown-toc -->
 
@@ -203,25 +200,4 @@ Add the settings *symbol_1* and *symbol_2* to config.def.h. These enable to defi
 ### Authors
 
 + Aleksandrs Stier
-
-## xresources
-
-**File**: `dmenu-xresources-4.9.diff`
-
-### Description
-
-This patch was originally made by Michal Lemke has been slightly modified to work with dmenu 4.9.
-
-This patch adds the ability to configure st via Xresources. At startup, st will read and apply the change to the applicable resource. Below are the resources that can be changed and what they change:
-
-+ `dmenu.font`: font or font set
-+ `dmenu.background`: normal background color
-+ `dmenu.foreground`: normal foreground color
-+ `dmenu.selbackground`: selected background color
-+ `dmenu.selforeground`: selected foreground color
-
-### Authors
-
-+ Michal Lemke - @melek on [Bitbucket](https://bitbucket.org/melek/dmenu2/)
-+ Pratik Bhusal - dmenu-xresources-4.9 port
 
